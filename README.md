@@ -29,10 +29,12 @@ python3 setup.py install
 To use the voice clone model, follow these steps:
 
 1. Clone the repository:
+   
   git clone https://github.com/jnordberg/tortoise-tts.git
+  
   cd tortoise-tts
 
-2. Set up the custom voice:
+3. Set up the custom voice:
   - Add your custom voice files to the 'tortoise/voices/custom' folder
   - Load the custom voice using the following command
 
