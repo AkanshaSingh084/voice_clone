@@ -43,7 +43,8 @@ To use the voice clone model, follow these steps:
   
     text = "Hello World, I am Akansha Singh and this is a voice clone model built using Python!"
     preset = "high_quality"
-  - can change accordingly  
+  - can change accordingly
+      
     gen = tts.tts_with_preset(text, voice_samples=voice_samples, conditioning_latents=conditioning_latents, preset=preset)
     torchaudio.save('generated-custom.wav', gen.squeeze(0).cpu(), 24000)
 
