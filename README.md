@@ -15,14 +15,14 @@ This repository contains the source code for Tortoise TTS, a Text-to-Speech (TTS
 
 To install Tortoise TTS and its dependencies, run the following commands:
 
-```bash
 pip3 install -U scipy
 pip3 install -r requirements.txt
 pip3 install transformers==4.19.0 einops==0.5.0 rotary_embedding_torch==0.1.5 unidecode==1.3.5
 python3 setup.py install
 
 
-Usage
+
+# Usage
 To use the voice clone model, follow these steps:
 
 1. Clone the repository:
