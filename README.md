@@ -30,19 +30,20 @@ To use the voice clone model, follow these steps:
   cd tortoise-tts
 
 2. Set up the custom voice:
-  # Add your custom voice files to the 'tortoise/voices/custom' folder
-  # Load the custom voice using the following command
-  from tortoise.utils.audio import load_voice
+  - Add your custom voice files to the 'tortoise/voices/custom' folder
+  - Load the custom voice using the following command
+
+  rom tortoise.utils.audio import load_voice
   voice_samples, conditioning_latents = load_voice("custom")
 
-3. Generate speech:
-  # Example code to generate speech
+4. Generate speech:
+  - Example code to generate speech
   from tortoise.api import TextToSpeech
   tts = TextToSpeech()
   
   text = "Hello World, I am Akansha Singh and this is a voice clone model built using Python!"
   preset = "high_quality"
-  #can change accordingly  
+  - can change accordingly  
   gen = tts.tts_with_preset(text, voice_samples=voice_samples, conditioning_latents=conditioning_latents, preset=preset)
   torchaudio.save('generated-custom.wav', gen.squeeze(0).cpu(), 24000)
 
